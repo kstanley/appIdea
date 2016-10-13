@@ -1,0 +1,47 @@
+1. 
+	user create account 
+	or login 
+	
+2. 
+	if (user create account){
+		create user in firebase db 
+	}
+
+3. 
+	login
+	respond with previous data
+4.
+	user create event object
+		{id: , catagory: , objective: , googleDocuments:, discription:, timeEncoded: }
+		
+5.
+	object and user token sent to server
+
+6. 
+	server creates event in google calendar with checkmark task
+	applies watch to task. 
+	
+7.
+	store task object in db with added object parameters for calendar id and task id. 
+
+8.
+	let user know task succeeded. 
+	
+
+other
+
+views
+	completed tasks
+	upcomming tasks 
+	all
+	uncompleted tasks
+	
+	user should be able to create, edit, and delete taks
+	
+	
+	
+	
+	IDEAS FOR LATER :) 
+
+learning recipes guide. people should be able to share their learning materials in a google doc. 
+	

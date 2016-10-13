@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+
+<html lang="en" class="no-touch">
+
+<head>
+	<% include ../partials/head %>
+</head>
+
+<body ng-app="login" class="ng-scope">
+	<header>
+		<% include ../partials/header %>
+	</header>
+	<div ng-controller="mainCtrl">
+
+
+		<form>
+			<button id="google-sign-in" name="googleSignIn" ng-click="googleSignIn()">sign in with google</button>
+		</form>
+		<button id="sign-out" ng-click="signOut()">sign out</button>
+	</div>
+	<% include ../partials/footer %>
+		<% include ../partials/dependencies %>
+			<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+			<script src="/public/javascripts/login.js"></script>
+
+</body>
+
+</html>

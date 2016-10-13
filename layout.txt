@@ -1,0 +1,12 @@
+user object 
+	learning area 
+		task 
+			resources/discription
+
+
+refrence material
+	mini article on tasks
+		https://support.google.com/calendar/answer/106237?hl=en&ref_topic=3417971
+	api
+		https://developers.google.com/google-apps/tasks/
+	
