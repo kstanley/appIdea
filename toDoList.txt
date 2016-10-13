@@ -1,5 +1,0 @@
-
-
-1. (Done) create application service account
-2. set up google login
-3. create editing page (control flow)
