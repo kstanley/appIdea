@@ -13,8 +13,6 @@ angular.module("login", [])
 		messagingSenderId: "818084639155"
 	};
 
-	var userCreated = false;
-
 	// start app
 	firebase.initializeApp(config);
 
@@ -51,6 +49,7 @@ angular.module("login", [])
 				$http.post('http://localhost:3000/api/user', userToken, config)
 					.success(function (data, status, headers, config) {
 						$scope.PostDataResponse = data;
+						//window.location = 'http://localhost:3000';
 						console.log(data);
 					})
 					.error(function (data, status, header, config) {
@@ -95,19 +94,6 @@ angular.module("login", [])
 		var credential = error.credential;
 		// ...
 	});
-
-
-	// forgotten password
-	$scope.forgotPassword = function () {
-		var auth = firebase.auth();
-		var emailAddress = $scope.forgotPass;
-		console.log(emailAddress);
-		auth.sendPasswordResetEmail(emailAddress).then(function () {
-			console.log("email sent");
-		}, function (error) {
-			console.log(error);
-		});
-	};
 
 	// end main controller
 });

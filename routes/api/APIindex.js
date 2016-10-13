@@ -7,6 +7,9 @@ APIrouter.post('/user', function (req, res) {
 	// create send function
 	var send = function (data) {
 		res.send(data);
+//		res.render('pages/index', {
+				//			title: 'Express'
+				//		});
 	};
 
 
