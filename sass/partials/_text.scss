@@ -1,0 +1,18 @@
+// other font ideas.
+// somewhat fun yet not crazy font for p tags
+    // @import url(https://fonts.googleapis.com/css?family=Oldenburg); font-family: 'Oldenburg', cursive;
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic);
+
+body {
+    h1, h2, h3, h4, h5, h6{
+        font-family: 'Oswald', sans-serif;
+    }
+
+    p {
+    font-family: 'Roboto', sans-serif; // good font
+    }
+}

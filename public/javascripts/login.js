@@ -16,7 +16,6 @@ angular.module("login", [])
 	// start app
 	firebase.initializeApp(config);
 
-
 	// sign out
 	$scope.signOut = function () {
 		firebase.auth().signOut().then(function () {

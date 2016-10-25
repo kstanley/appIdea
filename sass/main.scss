@@ -1,7 +1,42 @@
+@import 'partials/layout';
+@import 'partials/mixins';
+@import 'partials/variables';
+@import 'partials/text';
 .testing {
 	width: percentage(5/7);
 }
 
 p {
-	line-height: 11px;
+	line-height: 13px;
+}
+
+h3 {
+	font-size: 15px;
+}
+
+.item-property {
+	display: inline-block;
+	width: 100%;
+}
+
+.item {
+	display: inline-block;
+	width: percentage(1/10);
+	margin-left: percentage(1/30);
+	font-size: 15px;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.item-property {
+	button {
+		border-radius: 15px;
+		background-color: $color-1;
+		border-color: $color-1;
+		min-width: 100px;
+		max-width: 75%;
+	}
 }

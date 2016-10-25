@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+
+<html lang="en" class="no-touch">
+
+<head>
+	<% include ../partials/head %>
+</head>
+
+<body ng-app="login" class="ng-scope">
+	<header>
+		<% include ../partials/header %>
+	</header>
+	<div ng-controller="mainCtrl">
+		<div class="container">
+			<div class="item">
+				<div class="item-property"></div>
+			</div>
+		</div>
+	</div>
+	<div class="lesson-creator"></div>
+	<% include ../partials/footer %>
+		<% include ../partials/dependencies %>
+			<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+			<script src="/public/javascripts/testLogin.js"></script>
+
+</body>
+
+</html>

@@ -12,4 +12,12 @@ router.get('/login', function (req, res) {
 	res.render('pages/login');
 });
 
+router.get('/testing', function (req, res) {
+	res.render('pages/testing');
+});
+
+router.get('/testLogin', function (req, res) {
+	res.render('pages/testLogin');
+});
+
 module.exports = router;

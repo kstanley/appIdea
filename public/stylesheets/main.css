@@ -1,5 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic);
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: 'Oswald', sans-serif; }
+
+body p {
+  font-family: 'Roboto', sans-serif; }
+
 .testing {
   width: 71.42857%; }
 
 p {
-  line-height: 11px; }
+  line-height: 13px; }
+
+h3 {
+  font-size: 15px; }
+
+.item-property {
+  display: inline-block;
+  width: 100%; }
+
+.item {
+  display: inline-block;
+  width: 10%;
+  margin-left: 3.33333%;
+  font-size: 15px;
+  text-align: center; }
+
+.hidden {
+  display: none; }
+
+.item-property button {
+  border-radius: 15px;
+  background-color: #1b8515;
+  border-color: #1b8515;
+  min-width: 100px;
+  max-width: 75%; }

@@ -1,0 +1,112 @@
+var userObj = {
+	uid: "kjfdaoiuekjreq",
+	categorys: {
+		languages: {
+			name: "languages",
+			spanish: {
+				name: "spanish",
+				grammer: {
+					name: "grammer",
+					id: 2,
+					0: {
+						name: "unit 1 grammer",
+						times: ["times array"],
+						notes: "this is a note",
+						attatchments: "https://someWebsite",
+						completed: false
+					},
+					1: {
+						name: "unit 2 grammer",
+						times: ["times array"],
+						notes: "this is a note",
+						attatchments: "https://someWebsite",
+						completed: false
+					}
+				},
+				vocab: {
+					id: 1,
+					0: {
+						name: "unit 1 vocab",
+						times: ["times array"],
+						notes: "this is a note",
+						attatchments: "https://someWebsite",
+						completed: false
+					}
+				}
+			},
+			english: {
+				name: "english",
+				grammer: {
+					id: 0
+				},
+				vocab: {
+					id: 1,
+					0: {
+						name: "unit 1 english vocab",
+						times: ["times array"],
+						notes: "this is a note",
+						attatchments: "https://someWebsite",
+						completed: false
+					}
+				}
+			},
+			japanese: {
+				name: "japanese",
+				grammer: {
+					id: 0
+				},
+				vocab: {
+					id: 2,
+					0: {
+						name: "unit 1 japanese vocab",
+						times: ["times array"],
+						notes: "this is a note",
+						attatchments: "https://someWebsite",
+						completed: false
+					},
+					1: {
+						name: "unit 1 jap vocab",
+						times: ["times array"],
+						notes: "this is a note",
+						attatchments: "https://someWebsite",
+						completed: false
+					}
+				}
+			}
+		},
+		math: {
+			name: "math",
+			algebra: {
+				equations: {
+					id: 0
+				},
+				testing: {
+					id: 1,
+					1: {
+						name: "algebra test 1",
+						times: ["times array"],
+						notes: "this is a note",
+						attatchments: "https://someWebsite",
+						completed: false
+					}
+				}
+			},
+			trig: {
+				name: "tirg",
+				functions: {
+					id: 1,
+					0: {
+						name: "trig functions unit 1",
+						times: ["times array"],
+						notes: "this is a note",
+						attatchments: "https://someWebsite",
+						completed: false
+					}
+				},
+				equations: {
+					id: 0
+				}
+			},
+		}
+	}
+};

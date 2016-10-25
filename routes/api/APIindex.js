@@ -8,8 +8,8 @@ APIrouter.post('/user', function (req, res) {
 	var send = function (data) {
 		res.send(data);
 //		res.render('pages/index', {
-				//			title: 'Express'
-				//		});
+//			title: 'Express'
+//		});
 	};
 
 

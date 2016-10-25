@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+
+<html lang="en" class="no-touch">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="/assets/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="/public/stylesheets/main.css">
+</head>
+
+<body ng-app="login" class="ng-scope">
+	<header>
+	</header>
+	<div ng-controller="mainCtrl">
+
+		<div class="item-container">
+			<div class="items">
+				<div class="item-property">
+					<div class="id hidden"></div>
+					<h3 class="item name">test</h3>
+					<h3 class="item start-date">03/16/2017</h3>
+					<h3 class="item categories">categories</h3>
+					<h3 class="item notes">notes</h3>
+					<h3 class="item attatchments">attatchments</h3>
+					<div class="item">
+						<button class="edit">edit</button>
+					</div>
+					<div class="item">
+						<button class="delete">delete</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal hidden">
+			<div class="container">
+				<div class="id hidden"></div>
+				<div class="modal-item">
+					<h3 class="modal-name">test</h3></div>
+				<div class="modal-item">
+					<h3 class="modal-start-date">start date</h3></div>
+				<div class="modal-item">
+					<h3 class="modal-main-category">main category</h3></div>
+				<div class="modal-item">
+					<h3 class="modal-sub-category">sub category</h3></div>
+				<div class="modal-item">
+					<h3 class="modal-section">section</h3></div>
+				<div class="modal-item">
+					<h3 class="modal-notes" </div>
+				<div class="modal-item"><h3 class="modal-attatchments">attatch a file</h3></div>
+				<div class="modal-item">
+					<button class="modal-submit">submit</button>
+				</div>
+				<div class="modal-item">
+					<button class="modal-cancel">cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lesson-creator"></div>
+	</div>
+	<script src="/public/assets/angular.min.js"></script>
+	<script src="/public/assets/angular-route.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+	<script src="/javascripts/testLogin.js"></script>
+
+</body>
+
+</html>
