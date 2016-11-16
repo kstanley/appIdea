@@ -35,3 +35,67 @@ h3 {
   border-color: #1b8515;
   min-width: 100px;
   max-width: 75%; }
+
+.main {
+  margin: 0 auto;
+  text-align: center; }
+
+.modal {
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  visibility: hidden;
+  position: fixed;
+  opacity: 0;
+  width: 80%;
+  height: 85%;
+  background-color: #ececec;
+  box-shadow: 0px 0px 5px 3px #555; }
+  .modal .modal-form {
+    width: 100%; }
+  .modal .close {
+    float: right;
+    margin-left: 99%;
+    margin-top: 0; }
+  .modal .modal-form {
+    top: 0; }
+  .modal .description {
+    display: block;
+    width: 35%;
+    min-height: 40px;
+    max-height: 500px;
+    height: 150px;
+    margin-top: 5%;
+    margin-left: 32.5%; }
+  .modal .done {
+    display: block;
+    margin-left: 50%;
+    margin-top: 12.5%; }
+  .modal div {
+    display: inline-block; }
+
+.modal.visible {
+  z-index: 2;
+  visibility: visible;
+  opacity: 1; }
+
+HTMLJSCSS .datepickerdemoBasicUsage {
+  /** Demo styles for mdCalendar. */ }
+
+.datepickerdemoBasicUsage md-content {
+  padding-bottom: 200px; }
+
+.datepickerdemoBasicUsage .validation-messages {
+  font-size: 12px;
+  color: #dd2c00;
+  margin-left: 15px; }
+
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none; }

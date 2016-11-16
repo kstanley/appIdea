@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+
+<html lang="en" class="no-touch">
+
+<head>
+	<% include ../partials/head %>
+</head>
+
+<body ng-app="jsonCreator" class="ng-scope">
+	<header>
+		<% include ../partials/header %>
+	</header>
+	<div class="main">
+		<div ng-controller="mainCtrl">
+			<!--
+			<button type="button" ng-click="modalDisplay='visible'">
+				<div class="open-modal">modal</div>
+			</button>
+
+			<div class="modal" ng-class="modalDisplay">
+				<p>this will be the modal</p>
+			</div>
+-->
+			<button type="button" ng-click="isReplyFormOpen = !isReplyFormOpen; test='visible'">
+				<div class="open-modal">modal</div>
+			</button>
+
+			<div class="modal visible" ng-cloak ng-class="test" ng-init="isReplyFormOpen = true" ng-show="isReplyFormOpen">
+				<button class="close" ng-click="isReplyFormOpen = !isReplyFormOpen; test=''">X</button>
+				<div class="modal-form">
+					<p>this will be the modal test</p>
+					<select ng-model="myselect" ng-change="categoryChange(1)" ng-options="o as o for o in category"></select>
+					<select ng-model="mySubCat" ng-change="categoryChange(2)" ng-options='a as a for a in subCategory' </div>
+						<input class="learningName" type='text' placeholder="learning goal">
+						<button class="add-document">add document</button>
+						<br>
+						<select class="hour" ng-model="hou" ng-options='b as b for b in hour'>
+						</select>
+						<div>
+							<p>hour</p>
+						</div>
+						<select class="minute" ng-model="min" ng-options='c as c for c in minute'>
+						</select>
+						<div>
+							<p>minute</p>
+						</div>
+						<select class="am/pm">
+							<option value="am">am</option>
+							<option value="pm">pm</option>
+						</select>
+						<input type='date' ng-model="myDate" md-placeholder="Enter date">
+						<textarea class="description" placeholder="notes"></textarea>
+						<button class="done">finished</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<% include ../partials/footer %>
+		<% include ../partials/dependencies %>
+			<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+			<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+			<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js">
+			</script>
+			<script src="/public/javascripts/JsonTest.js"></script>
+</body>
+
+</html>

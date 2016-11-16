@@ -20,4 +20,8 @@ router.get('/testLogin', function (req, res) {
 	res.render('pages/testLogin');
 });
 
+router.get('/testJson', function (req, res) {
+	res.render('pages/testCreateJson');
+});
+
 module.exports = router;

@@ -6,10 +6,10 @@ var tinylr;
 
 // Compile Our Sass
 gulp.task('styles', function () {
-	gulp.src('sass/**/*.scss')
+	gulp.src('sass/*.scss')
 		.pipe(sass().on('error', sass.logError))
-		.pipe(livereload())
-		.pipe(gulp.dest('./public/stylesheets'));
+		.pipe(gulp.dest('./public/stylesheets'))
+		.pipe(livereload());
 });
 
 // watch js files
