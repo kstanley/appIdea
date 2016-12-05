@@ -29,32 +29,41 @@
 			<div class="modal visible" ng-cloak ng-class="test" ng-init="isReplyFormOpen = true" ng-show="isReplyFormOpen">
 				<button class="close" ng-click="isReplyFormOpen = !isReplyFormOpen; test=''">X</button>
 				<div class="modal-form">
+					<p>test of new dropdown</p>
+
+					<div ng-controller="mainCtrl as dropdownCtrl">
+						<input-dropdown allow-custom-input="true" input-placeholder="Country string" input-name="country-strings" input-required="true" selected-item="dropdownCtrl.countryString[0]" default-dropdown-items="dropdownCtrl.defaultDropdownStrings[0]" filter-list-method="dropdownCtrl.filterStringList(userInput, 0)" item-selected-method="dropdownCtrl.itemStringSelected(item)"></input-dropdown>
+						<p>{{dropdownCtrl.countryString[0]}}</p>
+					</div>
+					<p>end of new dropdown</p>
 					<p>this will be the modal test</p>
 					<select ng-model="myselect" ng-change="categoryChange(1)" ng-options="o as o for o in category"></select>
-					<select ng-model="mySubCat" ng-change="categoryChange(2)" ng-options='a as a for a in subCategory' </div>
-						<input class="learningName" type='text' placeholder="learning goal">
-						<button class="add-document">add document</button>
-						<br>
-						<select class="hour" ng-model="hou" ng-options='b as b for b in hour'>
-						</select>
-						<div>
-							<p>hour</p>
-						</div>
-						<select class="minute" ng-model="min" ng-options='c as c for c in minute'>
-						</select>
-						<div>
-							<p>minute</p>
-						</div>
-						<select class="am/pm">
-							<option value="am">am</option>
-							<option value="pm">pm</option>
-						</select>
-						<input type='date' ng-model="myDate" md-placeholder="Enter date">
-						<textarea class="description" placeholder="notes"></textarea>
-						<button class="done">finished</button>
+					<select ng-model="mySubCat" ng-change="categoryChange(2)" ng-options='a as a for a in subCategory'></select>
+
+					<input class="learningName" type='text' placeholder="learning goal">
+					<button class="add-document">add document</button>
 				</div>
+				<br>
+				<select class="hour" ng-model="hou" ng-options='b as b for b in hour'>
+				</select>
+				<div>
+					<p>hour</p>
+				</div>
+				<select class="minute" ng-model="min" ng-options='c as c for c in minute'>
+				</select>
+				<div>
+					<p>minute</p>
+				</div>
+				<select class="am/pm">
+					<option value="am">am</option>
+					<option value="pm">pm</option>
+				</select>
+				<input type='date' ng-model="myDate" md-placeholder="Enter date">
+				<textarea class="description" placeholder="notes"></textarea>
+				<button class="done">finished</button>
 			</div>
 		</div>
+	</div>
 	</div>
 
 	<% include ../partials/footer %>
@@ -65,6 +74,7 @@
 
 			<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js">
 			</script>
+			<script src="/public/assets/inputDropdown.js"></script>
 			<script src="/public/javascripts/JsonTest.js"></script>
 </body>
 
